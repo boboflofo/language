@@ -2,7 +2,7 @@
 # Portfolio
 #### By Jonathan Song
 
-#### Website to suggest Programming Language
+#### Website to Suggest Programming Language
 
 ## Technologies Used
 

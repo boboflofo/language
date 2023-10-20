@@ -1,38 +1,38 @@
 .hidden {
-  display:none;
+  display: none;
 }
 
 .error {
-  color:red;
+  color: red;
   font-size: 25px;
 }
 
 .card {
   width: 50%;
-  border:none;
+  border: none;
 }
 
 img {
   width: 100%;
 }
 
-.form{
+.form {
   margin-top: 30px;
 }
 
 body {
   background-color: #e0d6ff;
-  font-family: 'Sometype Mono', monospace;
+  font-family: "Sometype Mono", monospace;
 }
 
 button {
-  background-color:#C3B1E1;
+  background-color: #c3b1e1;
   border: 2px solid white;
   border-radius: 10px;
   margin-bottom: 50px;
 }
 
-.btn{
-  background-color: #C3B1E1;
+.btn {
+  background-color: #c3b1e1;
   border-color: white;
 }

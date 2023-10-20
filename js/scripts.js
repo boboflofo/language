@@ -15,7 +15,9 @@ function handleSubmit(e) {
   if (result === "You should learn JavaScript to become a web developer!") {
     document.querySelector(".javascript .card").setAttribute("class", "card");
   } else if (
-    result === "You are interested in Java! Games in larger platforms use Java." || result === "Java is also a programming language known for portability"
+    result ===
+      "You are interested in Java! Games in larger platforms use Java." ||
+    result === "Java is also a programming language known for portability"
   ) {
     document.querySelector(".java .card").setAttribute("class", "card");
   } else if (
