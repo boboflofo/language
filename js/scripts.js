@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
 function handleSubmit(e) {
   e.preventDefault();
   let result = "";
-
+  
   result = tester();
   document.querySelector(".results").innerText = result;
 }
@@ -17,9 +17,10 @@ function tester() {
   const speed = document.querySelector(".speed").value;
   const memory = document.querySelector(".memory").value;
   const portability = document.querySelector(".portability").value;
-  // document.querySelector(".error").setAttribute("class", "error hidden");
+  
+  document.querySelector(".error").setAttribute("class", "error hidden");
 
-  if (webDev && specWebDev && speed && memory && portability) {
+  if (webDev !== "Choose option" && specWebDev !== "Choose option" && speed !== "Choose option" && memory !== "Choose option" && portability !== "Choose option") {
     if (webDev === "yes") {
       return "You should learn JavaScript to become a web developer!";
     } else if (specWebDev === "platform") {
@@ -31,7 +32,7 @@ function tester() {
       return "A language known for its ability to manage memory and is gaining popularity is called Rust! Look into it.";
     } else if (specWebDev === "data" && portability === "yes") {
       return "Java is also a programming language known for portability";
-    }
+    } 
   } else {
     document.querySelector(".error").setAttribute("class", "error");
   }
