@@ -11,6 +11,14 @@ function handleSubmit(e) {
   if (result) { 
     document.querySelector(".results").innerText = result;
   }
+
+  if (result === "You should learn JavaScript to become a web developer!"){
+    document.querySelector(".javascript").setAttribute("class" , "javascript d-flex justify-content-center")
+  } else if (result === "You are interested in Java! Games in larger platforms use Java.") {
+    document.querySelector(".java").setAttribute("class" , "java d-flex justify-content-center")
+  } else if (result === "Look into C++, many say that C++ is one of the fastest programming languages!") {
+    document.querySelector(".c++").setAttribute("class" , "c++ d-flex justify-content-center")
+  }
  
 }
 
