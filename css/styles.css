@@ -31,3 +31,8 @@ button {
   border-radius: 10px;
   margin-bottom: 50px;
 }
+
+.btn{
+  background-color: #C3B1E1;
+  border-color: white;
+}
