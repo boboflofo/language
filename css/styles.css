@@ -9,4 +9,13 @@
 
 .card {
   width: 70%;
+  border:none;
+}
+
+img {
+  width: 100px;
+}
+
+.form{
+  margin-top: 30px;
 }
