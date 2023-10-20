@@ -8,15 +8,18 @@ function handleSubmit(e) {
   let result = "";
   
   result = tester();
-  document.querySelector(".results").innerText = result;
+  if (result) { 
+    document.querySelector(".results").innerText = result;
+  }
+ 
 }
 
 function tester() {
-  const webDev = document.querySelector(".web-dev").value;
-  const specWebDev = document.querySelector(".specific-webdev").value;
-  const speed = document.querySelector(".speed").value;
-  const memory = document.querySelector(".memory").value;
-  const portability = document.querySelector(".portability").value;
+  const webDev = document.querySelector("#web-dev").value;
+  const specWebDev = document.querySelector("#specific-webdev").value;
+  const speed = document.querySelector("#speed").value;
+  const memory = document.querySelector("#memory").value;
+  const portability = document.querySelector("#portability").value;
   
   document.querySelector(".error").setAttribute("class", "error hidden");
 

@@ -15,7 +15,7 @@
   <form class="form">
     <label>
       Do you enjoy web development?
-      <select class="web-dev">
+      <select id="web-dev">
         <option selected>Choose option</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
@@ -24,7 +24,7 @@
     <br>
     <label>
       Do you like web based games or larger platform games or prefer working with data?
-      <select class="specific-webdev">
+      <select id="specific-webdev">
         <option selected>Choose option</option>
         <option value="web">Web-based games</option>
         <option value="platform">Platform games</option>
@@ -34,7 +34,7 @@
     <br>
     <label>
       Do prefer speed as a priority?
-      <select class="speed">
+      <select id="speed">
         <option selected>Choose option</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
@@ -43,7 +43,7 @@
     <br>
     <label>
       Do you want to learn a language that has excellent memory management but not as much popularity?
-      <select class="memory">
+      <select id="memory">
         <option selected>Choose option</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
@@ -52,7 +52,7 @@
     <br>
     <label>
       Do you like portability?
-      <select class="portability">
+      <select id="portability">
         <option selected>Choose option</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
@@ -61,8 +61,27 @@
     <br>
     <button type="submit">Run Test!</button>
   </form>
-  <div class="display-result">
+  <div class="display-result d-flex justify-content-center">
     <p class="results"></p>
+  </div>
+
+  <div class="rust  d-flex justify-content-center align-items-center">
+    <div class="card">
+      <img class="card-img-top" src="..." alt="language icon">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="java">
+
+  </div>
+
+  <div class="javascript">
+
   </div>
     
 </body>
