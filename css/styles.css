@@ -19,3 +19,15 @@ img {
 .form{
   margin-top: 30px;
 }
+
+body {
+  background-color: #e0d6ff;
+  font-family: 'Sometype Mono', monospace;
+}
+
+button {
+  background-color:#C3B1E1;
+  border: 2px solid white;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
