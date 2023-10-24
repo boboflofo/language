@@ -3,33 +3,36 @@ window.addEventListener("load", () => {
   form.addEventListener("submit", handleSubmit);
 });
 
+const javascript = "You should learn JavaScript to become a web developer!";
+const java = "You are interested in Java! Games in larger platforms use Java.";
+const c =
+  "Look into C++, many say that C++ is one of the fastest programming languages!";
+const rust =
+  "A language known for its ability to manage memory and is gaining popularity is called Rust! Look into it.";
+const java2 = "Java is also a programming language known for portability";
+
 function handleSubmit(e) {
   e.preventDefault();
-  let result = "";
 
-  result = tester();
+  const allCards = document.querySelectorAll(".card");
+  allCards.forEach((card) => {
+    card.classList.add("hidden");
+  });
+
+  let result = tester();
+
   if (result) {
     document.querySelector(".results").innerText = result;
   }
 
-  if (result === "You should learn JavaScript to become a web developer!") {
-    document.querySelector(".javascript .card").setAttribute("class", "card");
-  } else if (
-    result ===
-      "You are interested in Java! Games in larger platforms use Java." ||
-    result === "Java is also a programming language known for portability"
-  ) {
-    document.querySelector(".java .card").setAttribute("class", "card");
-  } else if (
-    result ===
-    "Look into C++, many say that C++ is one of the fastest programming languages!"
-  ) {
-    document.querySelector(".c++ .card").setAttribute("class", "card");
-  } else if (
-    result ===
-    "A language known for its ability to manage memory and is gaining popularity is called Rust! Look into it."
-  ) {
-    document.querySelector(".rust .card").setAttribute("class", "card");
+  if (result === javascript) {
+    document.querySelector(".javascript .card").classList.remove("hidden");
+  } else if (result === java || result === java2) {
+    document.querySelector(".java .card").classList.remove("hidden");
+  } else if (result === c) {
+    document.querySelector(".c .card").classList.remove("hidden");
+  } else if (result === rust) {
+    document.querySelector(".rust .card").classList.remove("hidden");
   }
 }
 
@@ -50,16 +53,25 @@ function tester() {
     portability !== "Choose option"
   ) {
     if (webDev === "yes") {
-      return "You should learn JavaScript to become a web developer!";
+      return javascript;
     } else if (specWebDev === "platform") {
-      return "You are interested in Java! Games in larger platforms use Java.";
+      return java;
     }
     if (specWebDev === "data" && speed === "yes") {
-      return "Look into C++, many say that C++ is one of the fastest programming languages!";
+      return c;
     } else if (specWebDev === "data" && memory === "yes") {
-      return "A language known for its ability to manage memory and is gaining popularity is called Rust! Look into it.";
+      return rust;
     } else if (specWebDev === "data" && portability === "yes") {
-      return "Java is also a programming language known for portability";
+      return java2;
+    }
+    if (
+      webDev === "no" &&
+      specWebDev === "data" &&
+      speed === "no" &&
+      memory === "no" &&
+      portability === "no"
+    ) {
+      return javascript;
     }
   } else {
     document.querySelector(".error").setAttribute("class", "error");
