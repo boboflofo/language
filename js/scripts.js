@@ -63,14 +63,7 @@ function tester() {
       return rust;
     } else if (specWebDev === "data" && portability === "yes") {
       return java2;
-    }
-    if (
-      webDev === "no" &&
-      specWebDev === "data" &&
-      speed === "no" &&
-      memory === "no" &&
-      portability === "no"
-    ) {
+    } else {
       return javascript;
     }
   } else {
